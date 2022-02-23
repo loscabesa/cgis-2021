@@ -15,6 +15,7 @@ class CitaController extends Controller
 
     public function __construct()
     {
+        $variable_master = "Ahora qué mamona";
         $this->authorizeResource(Cita::class, 'cita');
     }
 
