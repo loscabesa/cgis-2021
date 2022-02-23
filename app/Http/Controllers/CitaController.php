@@ -27,6 +27,7 @@ class CitaController extends Controller
         elseif(Auth::user()->tipo_usuario_id == 2){
             $citas = Auth::user()->paciente->citas()->orderBy('fecha_hora', 'desc')->paginate(25);
         }
+        $a="a";
         return view('/citas/index', ['citas' => $citas]);
     }
 
