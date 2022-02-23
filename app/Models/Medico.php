@@ -13,7 +13,8 @@ class Medico extends Model
     protected $fillable = ['fecha_contratacion', 'vacunado', 'sueldo', 'especialidad_id'];
 
     protected $casts = [
-        'vacunado' => 'boolean',
+        //'vacunado' => 'boolean',
+        'vacunada' => 'boolean',
         'fecha_contratacion' => 'datetime:Y-m-d'
     ];
 
