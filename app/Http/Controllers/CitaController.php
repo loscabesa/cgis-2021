@@ -21,6 +21,7 @@ class CitaController extends Controller
 
     public function index()
     {
+        $toco_index = "Veien de master";
         $citas = Cita::orderBy('fecha_hora', 'desc')->paginate(25);
         if(Auth::user()->tipo_usuario_id == 1){
             $citas = Auth::user()->medico->citas()->orderBy('fecha_hora', 'desc')->paginate(25);
