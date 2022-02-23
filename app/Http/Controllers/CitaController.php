@@ -15,7 +15,10 @@ class CitaController extends Controller
 
     public function __construct()
     {
-        $variable_master = "Ahora qué mamona";
+        $a = "lab 5";
+        $b = "lab 5 otra vé";
+        $c = "Lab 5 A QUE NO TE LO ESPERABAAA";
+        $d = "No hay cuart";
         $this->authorizeResource(Cita::class, 'cita');
     }
 
