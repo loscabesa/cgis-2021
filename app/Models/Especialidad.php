@@ -9,7 +9,7 @@ class Especialidad extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nombre'];
+    protected $fillable = ['nombre', 'codigo'];
 
     public function medicos(){
         return $this->hasMany(Medico::class);
