@@ -10,7 +10,7 @@ class EspecialidadController extends Controller
     public function index()
     {
         $especialidades = Especialidad::paginate(25);
-        return view('/especialidades/index', ['especialidades' => $especialidades]);
+        return view('/especialidades/index33', ['especialidades' => $especialidades]);
     }
 
     /**

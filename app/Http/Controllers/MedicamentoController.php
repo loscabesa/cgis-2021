@@ -9,8 +9,8 @@ class MedicamentoController extends Controller
 {
     public function index()
     {
-        $medicamentos = Medicamento::paginate(25);
-        return view('/medicamentos/index', ['medicamentos' => $medicamentos]);
+        $medicamentas = Medicamento::paginate(25);
+        return view('/medicamentos/index', ['medicamentos' => $medicamentas]);
     }
 
     /**
